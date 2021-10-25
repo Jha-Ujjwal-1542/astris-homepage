@@ -8,7 +8,7 @@ import WhoWeAre from "./whoWeAre/index"
 // import Brands from "./ourBrands/index"
 // import NEWS from "./news/index"
 // import ContactUs from "./contactUs/index"
-// import Footer from "./footer/index"
+import Footer from "../templates/footer"
 
 import Image from "next/image";
 
@@ -25,8 +25,8 @@ export default function Home() {
       <Testimonials />
       <Brands />
       <NEWS />
-      <ContactUs />
-      <Footer /> */}
+      <ContactUs />*/}
+      <Footer /> 
 
     </div>
   );

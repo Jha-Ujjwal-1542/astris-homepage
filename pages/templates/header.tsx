@@ -61,7 +61,8 @@ const headerSection =() => {
             Bookings
          </div>
          <div className={styles.search}>
-            <BiSearch />Search Wesbite
+            <BiSearch />
+            Search Wesbite
          </div>
          <div>
             <FaClipboardList/>  2 items

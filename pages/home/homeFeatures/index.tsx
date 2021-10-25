@@ -9,13 +9,13 @@ const features = () => {
    return(
       <section>
          <div className={styles.features}>
-         <div className={styles.featuregroup}>
-            <GrDiamond />  Equipment Trials
-            <RiTeamLine/>  Experienced Team
-            <GiStrong />  Strong Relationships
-            <TiSupport/>  Configured Care
+            <div className={styles.featuregroup}>
+               <GrDiamond />  Equipment Trials
+               <RiTeamLine/>  Experienced Team
+               <GiStrong />  Strong Relationships
+               <TiSupport/>  Configured Care
+            </div>
          </div>
-      </div>
       </section>
    )
 }

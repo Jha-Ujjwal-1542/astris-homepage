@@ -6,7 +6,7 @@ import bannerimg from "../../img/bannerimg.png"
 const banner = () => {
    return(
       <section>
-         <div className={styles.description}>
+         <div className={styles.BannerDescription}>
             <div className={styles.welcome}>
                <Image 
                   src={bannerimg} 
