@@ -10,7 +10,6 @@ import WhoWeAre from "./whoWeAre/index"
 // import ContactUs from "./contactUs/index"
 import Footer from "../templates/footer"
 
-import Image from "next/image";
 
 
 
