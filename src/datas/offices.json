@@ -1,0 +1,44 @@
+[
+   {
+      "id":1,
+      "image": "./public/images/Steve.png",
+      "name": "Head Office",
+      "location": "30 Prime Dr, Seven Hills NSW 2147, Australia"
+   },
+   {
+      "id":2,
+      "image": "./public/images/Wes.png",
+      "name": "Sydney Office",
+      "location": "4 Phiney Place, Ingleburn NSW 2565, Australia"
+   },
+   {
+      "id":3,
+      "image": "./public/images/Michael.png",
+      "name": "Young Office",
+      "location": "5 McVeigh St., Young NSW 2594, Australia"
+   },
+   {
+      "id":4,
+      "image": "./public/images/Sam.png",
+      "name": "Melbourne Office",
+      "location": "3 Carmen St.,Trugania VIC 3029"
+   },
+   {
+      "id":5,
+      "image": "./public/images/Craig.png",
+      "name": "Brisbane Office",
+      "location": "38 Industry Place, Wynnum, Queensland 4178"
+   },
+   {
+      "id":6,
+      "image": "./public/images/John.png",
+      "name": "Newcastle/Central Coast Office",
+      "location": "109 Munibong Road, Boolaroo, NSW 2284"
+   },
+   {
+      "id":7,
+      "image": "./public/images/Tim.png",
+      "name": "Canberra Office",
+      "location": "3 Dominion Place, Queanbeyan, NSW 2620"
+   }
+]

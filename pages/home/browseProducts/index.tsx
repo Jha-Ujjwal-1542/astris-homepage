@@ -11,24 +11,7 @@ import styles from "../home.module.css";
                 </div>
             </div>
             <div className={styles.productsItembox} id="products--itembox">
-                {/* <?php
-                $array = array(
-                    ['img' => 'wheelchairs', 'title' => 'Wheelchairs'],
-                    ['img' => 'wheelchair-seating-system', 'title' => 'Wheelchair Seating Systems'],
-                    ['img' => 'special-needs-pushchairs', 'title' => 'Special Needs Pushchairs'],
-                    ['img' => 'walkers-tricycles', 'title' => 'Walkers/Tricycles'],
-                    ['img' => 'alternate-indoor-seating', 'title' => 'Alternate Indoor Seating'],
-                    ['img' => 'standers', 'title' => 'Standers'],
-                    ['img' => 'hygiene', 'title' => 'Hygiene'],
-                    ['img' => 'car-seats-harness', 'title' => 'Car Seats & Harness'],
-                    ['img' => 'positioning-sleep-system', 'title' => 'Positioning/Sleep Systems'],
-                    ['img' => 'hoist-support-stations', 'title' => 'Hoists/Support Stations'],
-                    ['img' => 'daily-living', 'title' => 'Daily Living'],
-                    ['img' => 'excersie-equipments', 'title' => 'Exercise Equipments']
-                );
-                foreach ($array as $productItem) {
-                    include 'includes/components/' . 'products' . '.php';
-                } ?> */}
+                
             </div>
         </div>
     </div>
