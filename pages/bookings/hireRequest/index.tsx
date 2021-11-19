@@ -1,8 +1,8 @@
 import { FaHome, FaSearch, FaCaretRight } from 'react-icons/fa'
 import Link from 'next/link'
 import Image from 'next/image';
-import indoorSeat from '../../../../public/images/products/indoorSeat.png'
-import IconUpload from '../../../../public/images/Upload.svg'
+import indoorSeat from '../../../public/images/products/indoorSeat.png'
+import IconUpload from '../../../public/images/Upload.svg'
 
 export const contactDetail =() => {
    

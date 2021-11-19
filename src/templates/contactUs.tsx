@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ContactForm from "../../src/templates/sharedModule/contact/contactFormHome"
+import ContactForm from "../../src/templates/sharedModule/contact/ContactFormHome"
 import ExpertTherapist from "../../public/images/Expert therapist.png"
 import contactBG from "../../public/images/contactBg.png"
 

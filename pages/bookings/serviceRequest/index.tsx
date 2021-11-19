@@ -1,7 +1,7 @@
 import { FaHome, FaSearch, FaCaretRight } from 'react-icons/fa'
 import Link from 'next/link'
 import Image from 'next/image';
-import IconUpload from '../../../../public/images/Upload.svg'
+import IconUpload from '../../../public/images/Upload.svg'
 
 const serviceReq = () => {
    return (
