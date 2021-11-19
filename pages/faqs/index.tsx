@@ -6,35 +6,35 @@ const FAQ = () => {
    
    return(
       <>
-         <section className={styles.breadcrumb}>
-            <div className={styles.container}>
-               <div className={styles.breadcrumbBox}>
+         <section className="breadcrumb">
+            <div className="container">
+               <div className="breadcrumbBox">
                   <Link href="/">
-                     <FaHome />
+                     <a><FaHome /></a>
                   </Link>
                   <FaCaretRight />
-                  <span className={styles.breadcrumbText}>Terms and Conditions</span>
+                  <span className="breadcrumbText">Terms and Conditions</span>
                </div>
             </div>
          </section>
          <section>
-            <div className={styles.mainTitle}>
+            <div className="mainTitle">
                FREQUENTLY ASKED QUESTIONS
-               <div className={styles.subTitle}>
+               <div className="subTitle">
                   Get All Your Queries Answered
                </div>
             </div>
-            <div className={styles.sectionTitle}>
-               <div className={styles.sectionSearchbox}>
+            <div className="sectionTitle">
+               <div className="sectionSearchbox">
                   <FaQuestion />
                   <input type="text" placeholder="Type & Find Your Preferred Brand" />
                </div>
             </div>
-            <div className={styles.faqSection}>
-               <div className={styles.faqQuestion}>
+            <div className="faqSection">
+               <div className="faqQuestion">
                   {Array(5).fill("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut ?")}
                   <br/><br/>
-                  <div className={styles.faqAnswer}>
+                  <div className="faqAnswer">
                      {Array(5).fill("Dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren")}
                   </div>
                </div>

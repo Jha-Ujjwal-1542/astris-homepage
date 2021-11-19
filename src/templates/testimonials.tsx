@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import styles from '../../styles/testimonials.module.css'
 import SayingPerson1 from '../../public/images/testimonialPerson1.png'
+import SayingPerson2 from '../../public/images/testimonialPerson2.png'
 import PlayIcon from '../../public/images/iconPlay.svg'
 import sayings from '../../src/datas/sayings.json'
 import React from "react"
@@ -24,40 +24,42 @@ const Testimonials = () => {
       dots: true,
       infinite: true,
       speed: 250,
-      slidesToShow: 4,
+      slidesToShow: 2,
       slidesToScroll: 1
     }; 
     
     return(
       <>
-         <section className = {styles.testimonialSection}>
-            <div className = {styles.testimonialBgoverlay}></div>
-            <div className = {styles.container}>
-               <div className = {styles.sectionBox}>
-                     <div className = {styles.sectionTitle}>
-                        <div className = {styles.mainTitle}>
+         <section className = "testimonialSection">
+            <div className = "container">
+               <div className = "sectionBox">
+                     <div className = "sectionTitle">
+                        <div className = "mainTitle">
                            <h3>What Our Valued Clients Have To Say</h3>
                         </div>
                      </div>
-                     <div className = {styles.testimonialSliderbox}>
-                        <div className = {styles.testimonialSlider} id="testimonialSlider">
+                     <div className = "testimonialSliderbox">
+                        <div className = "testimonialSlider" id="testimonialSlider">
                         <Slider {...settings}>
                            {sayings.map( saying => (
                               <div key={saying.id}>
-                                 <Image src={SayingPerson1} />
+                                 <div className="testimonialImage">
+                                    <div className="testimonialImage figure">
+                                       <Image className="testimonialImage image" src={saying.image} width="530px" height="240px" alt="" />   
+                                    </div>
+                                 </div>
                                  {/*<div>
                                     
-                                    <div className={styles.testimonialVideo}>
+                                    <div className="testimonialVideo}>
                                         <button>
                                           <Image src={PlayIcon} />
                                        </button> 
                                     </div>
                                  </div>*/}
-                                 <span>{ saying.desc }</span>
-                                 <br/>
-                                 <button>
-                                    Continue Reading
-                                 </button>
+                                 <div className="details"> 
+                                    <div className="name">{saying.name}</div>
+                                    <span>{ saying.desc }</span>
+                                 </div>
                               </div>
                            ))}
                            

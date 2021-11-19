@@ -21,55 +21,54 @@ const Blogs = () => {
    return (
       <>
          <section>
-            <section className={styles.breadcrumbSection}>
-               <div className={styles.container}>
-                  <div className={styles.breadcrumbBox}>
+            <section className="breadcrumbSection">
+               <div className="container">
+                  <div className="breadcrumbBox">
                      <Link href="/">
-                        <FaHome width="25px" height="25px" />
+                        <a>
+                           <FaHome width="25px" height="25px" />
+                        </a>
                      </Link>
                      <IoMdArrowDroprightCircle width="" height="" />
-                     <span className={styles.breadcrumbText}>Blogs</span>
+                     <span className="breadcrumbText">Blogs</span>
                   </div>
                </div>
             </section> 
             
-            <section className={styles.container}>
-                  <div className={styles.sectionBox}>
-                        <div className={styles.sectionTitle}>
-                           <div className={styles.mainTitle}>
+            <section className="container">
+                  <div className="sectionBox">
+                        <div className="sectionTitle">
+                           <div className="mainTitle">
                               <h3>Latest Blogs</h3>
                            </div>
-                           <div className={styles.sectionSearchbox}>
+                           <div className="sectionSearchbox">
                               <BiSearch />
                               <input type="text" placeholder="Search Blogs" />
                            </div>
                         </div>
-                        <div className={styles.sectionMainbox}>
-                           <div className={styles.sectionsidebarFilter}>
-                              <div className={styles.sectionsidebarFiltergroup}>
-                                    <div className={styles.sectionsidebarFilter}>
+                        <div className="sectionMainbox">
+                           <div className="sectionsidebarFilter">
+                              <div className="sectionsidebarFiltergroup">
+                                    <div className="sectionsidebarFilter">
                                        <ul>
-                                          <li><a href="" title="Show All Blog">Show All Blog</a></li>
-                                          <li><a href="" className={styles.active} title="February 2021">February 2021</a></li>
-                                          <li><a href="" title="January 2021">January 2021</a></li>
-                                          <li><a href="" title="December 2020">December 2020</a></li>
-                                          <li><a href="" title="November 2020">November 2020</a></li>
-                                          <li><a href="" title="October 2020">October 2020</a></li>
-                                          <li><a href="" title="Septmeber 2020">Septmeber 2020</a></li>
+                                          <li><Link href="#" passHref><a title="Show All Blog">Show All Blog</a></Link></li>
+                                          <li><Link href="#" passHref><a className="active" title="February 2021">February 2021</a></Link></li>
+                                          <li><Link href="#" passHref><a title="January 2021">January 2021</a></Link></li>
+                                          <li><Link href="#" passHref><a title="December 2020">December 2020</a></Link></li>
+                                          <li><Link href="#" passHref><a title="November 2020">November 2020</a></Link></li>
+                                          <li><Link href="#" passHref><a title="October 2020">October 2020</a></Link></li>
+                                          <li><Link href="#" passHref><a title="Septmeber 2020">Septmeber 2020</a></Link></li>
                                        </ul>
-                                       <div className={styles.buttonHolder}>
-                                          <a href="" className={styles.button} title="Load More Dates">Load More Dates</a>
-                                       </div>
                                     </div>
                               </div>
                            </div>
-                           <main className={styles.sectionMain}>
-                              <div className={styles.innerblogItembox}>
-                                    <Link href="/singleBlog.tsx">
+                           <main className="sectionMain">
+                              <div className="innerblogItembox">
+                                    <Link href="/blogs/singleBlog">
                                        <a>
                                           {blogs.map( blog => (
                                              <div key={blog.id}>
-                                                <Image src={blogImage} width="350px" height="240px" />
+                                                <Image src={blogImage} width="350px" height="240px" alt ="" />
                                                 <span>{ blog.title }</span>
                                                 <span>{ blog.text }</span>
                                                 <button>

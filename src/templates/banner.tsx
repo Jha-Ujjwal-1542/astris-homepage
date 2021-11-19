@@ -1,31 +1,43 @@
 import Image from "next/image";
-import styles from "../../styles/banner.module.css";
+import Link from "next/link";
 import { IoBagHandleSharp } from "react-icons/io5";
-import bannerimg from "../../public/images/bannerimg.png"
+import bannerimage from "../../public/images/bannerimage.png"
+
+export const handleClick = () => {
+   console.log("hello")
+}
 
 const banner = () => {
    return(
-      <section>
-         <div className={styles.BannerDescription}>
-            <div className={styles.welcome}>
-               <Image 
-                  src={bannerimg} 
-                  className={styles.banner} 
-                  width="1800px" 
-                  height="516px" 
-               />
+      <section className="bannerSection">
+         <Image 
+               src={bannerimage} 
+               className="banner" 
+               width="1800px" 
+               height="516px" 
+               alt=""
+         />
+         <div className="bannerBox">
+            <div className="bannerTextbox">
+               <div className="title">
+                  <h1>
+                     <span>Welcome to Astris PME</span>
+                     <span className="colYellow">Improving lives</span>
+                  </h1>
+               </div>
+               <div className="buttonHolder">
+                  <button className="button" onClick={handleClick} title="REQUEST PRODUCT TRIAL">
+                     REQUEST PRODUCT TRIAL
+                  </button>
+                  <Link href="#">
+                     <a className="button buttonYellow">
+                        <IoBagHandleSharp className="buttonIcon" />
+                        <span className="dataText">START BROWSING PRODUCTS</span>
+                     </a>   
+                  </Link>
+               </div>
             </div>
-            <span className={styles.welcometext1}>Welcome to Astris PME</span><br/>
-            <span className={styles.welcometext2}>Improving lives</span>
-            <div>
-               <button className={styles.producttrial}>
-                  <span>REQUEST PRODUCT TRIAL</span>
-               </button>
-               <button className={styles.browseprods}>
-               <IoBagHandleSharp /> <span>START BROWSING PRODUCTS</span>
-               </button>
-            </div>
-         </div>
+         </div>   
       </section>
    )
 }

@@ -1,42 +1,41 @@
 import Image from "next/image";
+import ContactForm from "../../src/templates/sharedModule/contact/contactFormHome"
 import ExpertTherapist from "../../public/images/Expert therapist.png"
-import ContactForm from "../../src/templates/sharedModule/contact/contactForm"
+import contactBG from "../../public/images/contactBg.png"
 
 
 const ContactUs = () => {
    return (
-      <section className="contactus--section padding-area">
-      <div className="container">
-         <div className="section--box small-gap">
-            <div className="sub-title col-skyblue">
-               FREE CONSULTATION
-            </div>
-            <div className="main-title">
-               Speak To Us Today!
-            </div>
-            <div className="contactus--box">
-               <div className="contactus--itemholder">
-                  <div className="contactus--formbox">
-                     <ContactForm />
-                     <div className="contactus--itembox">
-							   <div className="contactus--item">
-                           <div className="contactus--itemdetail">
-                              <Image
-                                 width="900px"
-                                 height="500px"
-                                 src={ExpertTherapist}
-                                 alt=""
-                              />
-                              <span>Joanna Bloggs Expert Therapist</span>
-                           </div>
-                        </div>
+      <section className="contactSection">
+         <div className="contactBgoverlay">
+            <Image src={contactBG} width="" height="" alt="" />
+         </div>
+         <div className="container">
+            <div className="contactBox">
+               <div className="contactImagebox">
+                  <div className="contactImage">
+                     <figure>
+                        <Image width="522px" height="500px" src={ExpertTherapist} alt="" />
+                     </figure>
+                  </div>
+                  <div className="contactImagetext">
+                     <strong>Joanna Bloggs</strong> Expert Therapist
+               </div>
+               </div>
+               <div className="contactFormbox">
+                  <div className="sectionTitle">
+                     <div className="subTitle">
+                        FREE CONSULTATION
+                     </div>
+                     <div className="mainTitle">
+                        <h3>Speak To Us Today!</h3>
                      </div>
                   </div>
+                  <ContactForm />
                </div>
             </div>
          </div>
-      </div>
-   </section>
-   )
+      </section>
+   )      
 }
 export default ContactUs;

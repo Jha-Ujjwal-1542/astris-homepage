@@ -1,49 +1,49 @@
 [
    {
       "id":1,
-      "image": "./public/images/Steve.png",
+      "image": "/images/whoWeAre/Steve.png",
       "name": "Steve Joyce",
       "position": "Managing Director"
    },
    {
       "id":2,
-      "image": "./public/images/Wes.png",
+      "image": "/images/whoWeAre/Wes.png",
       "name": "Wes Roach",
       "position": "Director"
    },
    {
       "id":3,
-      "image": "./public/images/Michael.png",
+      "image": "/images/whoWeAre/Michael.png",
       "name": "Michael Gage",
       "position": "Director"
    },
    {
       "id":4,
-      "image": "./public/images/Sam.png",
+      "image": "/images/whoWeAre/Sam.png",
       "name": "Sam Joyce",
       "position": "Director"
    },
    {
       "id":5,
-      "image": "./public/images/Craig.png",
+      "image": "/images/whoWeAre/Craig.png",
       "name": "Craig",
       "position": "Non Executive Director"
    },
    {
       "id":6,
-      "image": "./public/images/John.png",
+      "image": "/images/whoWeAre/John.png",
       "name": "John",
       "position": "Senior Advisor"
    },
    {
       "id":7,
-      "image": "./public/images/Tim.png",
+      "image": "/images/whoWeAre/Tim.png",
       "name": "Tim",
       "position": "Senior Advisor"
    },
    {
       "id":8,
-      "image": "./public/images/Gareth.png",
+      "image": "/images/whoWeAre/Gareth.png",
       "name": "Gareth",
       "position": "CFO"
    }

@@ -1,140 +1,178 @@
-import styles from "../../pages/home/home.module.css";
 import Image from "next/image";
+import Link from "next/link";
+import { FaMapMarkerAlt, FaFacebookSquare, FaLinkedin, FaYoutube, FaPhoneAlt } from 'react-icons/fa'
+import { SiGmail } from 'react-icons/si'
 import astrispmeLogo from "../../public/images/logos/astrisPMELogowhaite.png"
-import iconPhone from "../../public/images/icons/phoneIcon.png"
-import iconMail from "../../public/images/icons/mailIcon.png"
-import iconMapMarker from "../../public/images/icons/locationIcon.png"
-import iconFacebook from "../../public/images/icons/fbIcon.png"
-import iconLinkedin from "../../public/images/icons/linkedinIcon.png"
-import iconYoutube from "../../public/images/icons/youtubeIcon.png"
 
 const footer = () => {
    return(
       <section>
-         <footer className={styles.footerSection}>
-            <div className={styles.container}>
-               <div className={styles.footerBox}>
-                  <div className={styles.footerDetailbox}>
-                     <div className={styles.footerLogo}>
-                        <a href="/" title="">
-                           <Image src={astrispmeLogo} />
-                        </a>
+         
+         <section className="footerSection">
+         <div className="container">
+               <div className="footerBox">
+                  <div className="footerDetailbox">
+                     <div className="footerLogo">
+                        <Link href="/" >
+                           <a>
+                              <Image src={astrispmeLogo} alt="" />
+                           </a>
+                        </Link>
                      </div>
-                     <div className={styles.footerListMain}>
-                        <div className={styles.footerList}>Contact Us</div>
-                           <ul className={styles.dataSpan}>
-                              <li>
-                                 <span className={styles.dataIcon}><Image src={iconPhone} /></span>
-                                 <span className={styles.dataText}><a href="tel:1300131884" title="Call Us">1300 131 884</a></span>
+                     <div className="footerList">
+                        <div className="footerListTitle">Contact Us</div>
+                        <ul className="dataSpan">
+                           <li>
+                              <span className="dataIcon"><FaPhoneAlt  /></span>
+                              <span className="dataText"><a href="tel:1300131884" title="Call Us">1300 131 884</a></span>
+                           </li>
+                           <li>
+                              <span className="dataIcon"><SiGmail /></span>
+                              <span className="dataText"><a href="mailto:info@astris-pme.com.au" title="Mail Us">info@astris-pme.com.au</a></span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div className="footerNewsletter">
+                        <div className="formGroup">
+                           <SiGmail  />
+                           <input type="email" className="formControl" placeholder="Your Email Address"  />
+                        </div>
+                        <div className="formGroupSubmit">
+                           <input type="submit" className="buttonGrey" value="SUBSCRIBE TO OUR NEWSLETTER" />
+                        </div>
+                     </div>
+                  </div>
+                  <div className="footerDetailbox">
+                     <div className="footerListbox">
+                        <div className="footerList">
+                           <div className="footerListTitle">Site Map</div>
+                           <ul>
+                              <li> 
+                                 <Link href="/aboutUs/whatWeDo">
+                                    <a title="About Us">About Us</a>
+                                 </Link>
                               </li>
                               <li>
-                                 <span className={styles.dataIcon}>
-                                    <Image src={iconMail} />
-                                 </span>
-                                 <span className={styles.dataText}><a href="mailto:info@astris-pme.com.au" title="Mail Us">info@astris-pme.com.au</a></span>
+                                 <Link href="/browseByCategory">
+                                    <a title="Our Products">Our Products</a>
+                                 </Link>
+                              </li>
+                              <li>
+                                 <Link href="/browseByCategory">
+                                    <a title="Shop Now">Shop Now</a>
+                                 </Link>
+                              </li>
+                              <li>
+                                 <Link href="/brochures">
+                                    <a title="Resources">Resources</a>
+                                    </Link>
+                              </li>
+                              <li>
+                                 <Link href="/serviceRequest">
+                                    <a title="Booking">Booking</a>
+                                 </Link>
+                              </li>
+                              <li>
+                                 <Link href="/contactUs">
+                                    <a title="Contact Us">Contact Us</a>
+                                 </Link>
+                              </li>
+                              <li>
+                                 <Link href="/myTherapist">
+                                    <a title="Therapist">Therapist</a>
+                                 </Link>
+                              </li>
+                              <li>
+                                 <Link href="/myDetails">
+                                    <a title="User Portal">User Portal</a>
+                                 </Link>
                               </li>
                            </ul>
                         </div>
-                        <div className={styles.footerNewsletter}>
-                           <div className={styles.formGroup}>
-                           <Image src={iconMail} />
-                              <input type="email" placeholder="Your Email Address" className={styles.formControl} />
-                           </div>
-                           <div className={styles.formGroupSubmit}>
-                              <input type="submit" className={styles.buttonGrey} value="SUBSCRIBE TO OUR NEWSLETTER" />
-                           </div>
-                        </div>
-                     </div>
-                     <div className={styles.footerItembox}>
-                        <div className={styles.footerListbox}>
-                           <div className={styles.footerList}>
-                              <div className={styles.footerListTitle}>
-                                 Site Map
-                              </div>
-                              <ul>
-                                 <li><a href="what-we-do.php" title="About Us">About Us</a></li>
-                                 <li><a href="browse-by-category.php" title="Our Products">Our Products</a></li>
-                                 <li><a href="browse-by-category.php" title="Shop Now">Shop Now</a></li>
-                                 <li><a href="brochures.php" title="Resources">Resources</a></li>
-                                 <li><a href="service-request.php" title="Booking">Booking</a></li>
-                                 <li><a href="contact-us.php" title="Contact Us">Contact Us</a></li>
-                                 <li><a href="my-therapist.php" title="Therapist">Therapist</a></li>
-                                 <li><a href="my-details.php" title="User Portal">User Portal</a></li>
-                              </ul>
-                           </div>
-                           <div className={styles.footerList}>
-                              <div className={styles.footerListTitle}>Our Branches</div>
-                                 <ul className={styles.dataSpan}>
-                                    <li>
-                                       <span className={styles.dataIcon}><Image src={iconMapMarker} /></span>
-                                       <span className={styles.dataText}><strong>Sydney (HO)</strong> 0 Prime Dr, Seven Hills NSW 2147</span>
-                                    </li>
-                                    <li>
-                                       <span className={styles.dataIcon}><Image src={iconMapMarker} /></span>
-                                       <span className={styles.dataText}><strong>Sydney (South)</strong> 4 Phiney Place, Ingleburn NSW 2565</span>
-                                    </li>
-                                    <li>
-                                       <span className={styles.dataIcon}><Image src={iconMapMarker} /></span>
-                                       <span className={styles.dataText}><strong>Newcastle/Central Coast</strong> 109 Munibong Road, Boolaroo, NSW 2284</span>
-                                    </li>
-                                    <li>
-                                       <span className={styles.dataIcon}><Image src={iconMapMarker} /></span>
-                                       <span className={styles.dataText}><strong>Young</strong> 5 McVeigh St, Young NSW 2594</span>
-                                    </li>
-                                    <li>
-                                       <span className={styles.dataIcon}><Image src={iconMapMarker} /></span>
-                                       <span className={styles.dataText}><strong>Brisbane</strong> 38 Industry Place, Wynnum</span>
-                                    </li>
-                                    <li>
-                                       <span className={styles.dataIcon}><Image src={iconMapMarker} /></span>
-                                       <span className={styles.dataText}><strong>Melbourne</strong> 3 Carmen Street Truganina VIC 3029</span>
-                                    </li>
-                                    <li>
-                                    <span className={styles.dataIcon}><Image src={iconMapMarker} /></span>
-                                    <span className={styles.dataText}><strong>Canberra</strong> 3 Dominion Place, Queanbeyan, NSW 2620</span>
+                        <div className="footerList">
+                           <div className="footerListTitle">Our Branches</div>
+                           <ul className="dataSpan">
+                                 <li>
+                                    <span className="dataIcon"><FaMapMarkerAlt /></span>
+                                    <span className="dataText"><strong>Sydney (HO)</strong> 0 Prime Dr, Seven Hills NSW 2147</span>
                                  </li>
-                              </ul>
-                           </div>
-                        </div>
-                        <div className={styles.footerData}>
-                           <ul className={styles.socialIcons}>
-                              <li><a href="" title="Facebook" rel="noreferrer"><Image src={iconFacebook}/></a></li>
-                              <li><a href="" title="Linkedin" rel="noreferrer"><Image src={iconLinkedin}/></a></li>
-                              <li><a href="" title="Youtube" rel="noreferrer"><Image src={iconYoutube}/></a></li>
+                                 <li>
+                                    <span className="dataIcon"><FaMapMarkerAlt  /></span>
+                                    <span className="dataText"><strong>Sydney (South)</strong> 4 Phiney Place, Ingleburn NSW 2565</span>
+                                 </li>
+                                 <li>
+                                    <span className="dataIcon"><FaMapMarkerAlt  /></span>
+                                    <span className="dataText"><strong>Newcastle/Central Coast</strong> 109 Munibong Road, Boolaroo, NSW 2284</span>
+                                 </li>
+                                 <li>
+                                    <span className="dataIcon"><FaMapMarkerAlt  /></span>
+                                    <span className="dataText"><strong>Young</strong> 5 McVeigh St, Young NSW 2594</span>
+                                 </li>
+                                 <li>
+                                    <span className="dataIcon"><FaMapMarkerAlt  /></span>
+                                    <span className="dataText"><strong>Brisbane</strong> 38 Industry Place, Wynnum</span>
+                                 </li>
+                                 <li>
+                                    <span className="dataIcon"><FaMapMarkerAlt /></span>
+                                    <span className="dataText"><strong>Melbourne</strong> 3 Carmen Street Truganina VIC 3029</span>
+                                 </li>
+                                 <li>
+                                 <span className="dataIcon"><FaMapMarkerAlt  /></span>
+                                 <span className="dataText"><strong>Canberra</strong> 3 Dominion Place, Queanbeyan, NSW 2620</span>
+                              </li>
                            </ul>
-                        <div className={styles.text}>Improving Lives. With Astris PME.</div>
+                        </div>
+                     </div>
+                     <div className="footerData">
+                        <ul className="socialIcons">
+                           <li><Link href="#"><a title="Facebook" rel="noreferrer"><FaFacebookSquare /></a></Link></li>
+                           <li><Link href="#"><a title="Linkedin" rel="noreferrer"><FaLinkedin /></a></Link></li>
+                           <li><Link href="#"><a title="Youtube" rel="noreferrer"><FaYoutube /></a></Link></li>
+                        </ul>
+                        <div className="text">Improving Lives. With Astris PME.</div>
                      </div>
                   </div>
                </div>
-            </div>
-         </footer>
-         <section className={styles.copyrightSection}>
-            <div className={styles.container}>
-               <div className={styles.copyrightBox}>
-                  <div className={styles.copyrightText}>
+               </div>
+         </section>
+        
+         
+         <section>
+            <div className="copyrightBox">
+               <div className="container">
+                  <div className="copyrightText">
                      © 2021 Astris PME Pty Ltd. All Rights Reserved.
                   </div>
-                  <div className={styles.copyrightLinks}>
-                     <ul id={styles.copyrightLinksList}>
-                        <li id={styles.copyrightLinksLists}>
-                           <a href="terms-and-conditions.php" title="Terms & Conditions">
-                              Terms & Conditions
-                           </a>
+                  <div className="copyrightLinks">
+                     <ul>
+                        <li>
+                           <Link href="#">
+                              <a title="Terms & Conditions">
+                                 Terms & Conditions
+                              </a>
+                           </Link>
                         </li>
-                        <li id={styles.copyrightLinksLists}>
-                           <a href="#" title="Privacy Policy">
-                              Privacy Policy
-                           </a>
+                        <li>
+                           <Link href="#">
+                              <a title="Privacy Policy">
+                                 Privacy Policy
+                              </a>
+                           </Link>
                         </li>
-                        <li id={styles.copyrightLinksLists}>
-                           <a href="#" title="Terms Of Use">
-                              Terms Of Use
-                           </a>
+                        <li>
+                           <Link href="#">
+                              <a title="Terms Of Use">
+                                 Terms Of Use
+                              </a>
+                           </Link>
                         </li>
                      </ul>
                   </div>
-                  <div className={styles.copyrightText}>
-                     By <a href="#" title="WEBO Digital">WEBO Digital</a>
+                  <div className="copyrightText">
+                     By 
+                     <Link href="#">
+                        <a title="WEBO Digital">WEBO Digital</a>
+                     </Link>
                   </div>
                </div>
             </div>
