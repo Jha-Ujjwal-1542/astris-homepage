@@ -24,11 +24,11 @@ const footer = () => {
                         <ul className="dataSpan">
                            <li>
                               <span className="dataIcon"><FaPhoneAlt  /></span>
-                              <span className="dataText"><a href="tel:1300131884" title="Call Us">1300 131 884</a></span>
+                              <span className="dataText"> <a  className="links"  href="tel:1300131884" title="Call Us">1300 131 884</a></span>
                            </li>
                            <li>
                               <span className="dataIcon"><SiGmail /></span>
-                              <span className="dataText"><a href="mailto:info@astris-pme.com.au" title="Mail Us">info@astris-pme.com.au</a></span>
+                              <span className="dataText"> <a  className="links"  href="mailto:info@astris-pme.com.au" title="Mail Us">info@astris-pme.com.au</a></span>
                            </li>
                         </ul>
                      </div>
@@ -49,42 +49,42 @@ const footer = () => {
                            <ul>
                               <li> 
                                  <Link href="/aboutUs/whatWeDo">
-                                    <a title="About Us">About Us</a>
+                                    <a  className="links"  title="About Us">About Us</a>
                                  </Link>
                               </li>
                               <li>
                                  <Link href="/browseByCategory">
-                                    <a title="Our Products">Our Products</a>
+                                    <a  className="links"  title="Our Products">Our Products</a>
                                  </Link>
                               </li>
                               <li>
                                  <Link href="/browseByCategory">
-                                    <a title="Shop Now">Shop Now</a>
+                                    <a  className="links"  title="Shop Now">Shop Now</a>
                                  </Link>
                               </li>
                               <li>
                                  <Link href="/brochures">
-                                    <a title="Resources">Resources</a>
-                                    </Link>
+                                    <a  className="links"  title="Resources">Resources</a>
+                                 </Link>
                               </li>
                               <li>
                                  <Link href="/serviceRequest">
-                                    <a title="Booking">Booking</a>
+                                    <a  className="links"  title="Booking">Booking</a>
                                  </Link>
                               </li>
                               <li>
                                  <Link href="/contactUs">
-                                    <a title="Contact Us">Contact Us</a>
+                                    <a  className="links"  title="Contact Us">Contact Us</a>
                                  </Link>
                               </li>
                               <li>
                                  <Link href="/myTherapist">
-                                    <a title="Therapist">Therapist</a>
+                                    <a  className="links"  title="Therapist">Therapist</a>
                                  </Link>
                               </li>
                               <li>
                                  <Link href="/myDetails">
-                                    <a title="User Portal">User Portal</a>
+                                    <a  className="links"  title="User Portal">User Portal</a>
                                  </Link>
                               </li>
                            </ul>
@@ -125,9 +125,9 @@ const footer = () => {
                      </div>
                      <div className="footerData">
                         <ul className="socialIcons">
-                           <li><Link href="#"><a title="Facebook" rel="noreferrer"><FaFacebookSquare /></a></Link></li>
-                           <li><Link href="#"><a title="Linkedin" rel="noreferrer"><FaLinkedin /></a></Link></li>
-                           <li><Link href="#"><a title="Youtube" rel="noreferrer"><FaYoutube /></a></Link></li>
+                           <li><Link href="#"><a  className="links"  title="Facebook" rel="noreferrer"><FaFacebookSquare /></a></Link></li>
+                           <li><Link href="#"><a  className="links"  title="Linkedin" rel="noreferrer"><FaLinkedin /></a></Link></li>
+                           <li><Link href="#"><a  className="links"  title="Youtube" rel="noreferrer"><FaYoutube /></a></Link></li>
                         </ul>
                         <div className="text">Improving Lives. With Astris PME.</div>
                      </div>
@@ -136,10 +136,9 @@ const footer = () => {
                </div>
          </section>
         
-         
          <section>
-            <div className="copyrightBox">
-               <div className="container">
+            <div className="container">
+               <div className="copyrightBox">
                   <div className="copyrightText">
                      © 2021 Astris PME Pty Ltd. All Rights Reserved.
                   </div>
@@ -147,23 +146,17 @@ const footer = () => {
                      <ul>
                         <li>
                            <Link href="#">
-                              <a title="Terms & Conditions">
-                                 Terms & Conditions
-                              </a>
+                              <a  className="links"  title="Terms & Conditions">Terms & Conditions</a>
                            </Link>
                         </li>
                         <li>
                            <Link href="#">
-                              <a title="Privacy Policy">
-                                 Privacy Policy
-                              </a>
+                              <a  className="links"  title="Privacy Policy"> Privacy Policy</a>
                            </Link>
                         </li>
                         <li>
                            <Link href="#">
-                              <a title="Terms Of Use">
-                                 Terms Of Use
-                              </a>
+                              <a  className="links"  title="Terms Of Use">Terms Of Use</a>
                            </Link>
                         </li>
                      </ul>
@@ -171,7 +164,7 @@ const footer = () => {
                   <div className="copyrightText">
                      By 
                      <Link href="#">
-                        <a title="WEBO Digital">WEBO Digital</a>
+                        <a  className="links"  title="WEBO Digital">WEBO Digital</a>
                      </Link>
                   </div>
                </div>

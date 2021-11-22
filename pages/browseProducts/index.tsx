@@ -16,28 +16,29 @@ const products = () => {
         <section className="productsSection">
             <div className="container">
                 <div className="sectionBox">
-                    <div className="sectionTitle text-center">
-                        <div className="subTitle capitalize">BROWSE THROUGH OUR COLLECTIONS</div>
+                    <div className="sectionTitle center">
+                        <div className="subTitle">BROWSE THROUGH OUR COLLECTIONS</div>
                         <div className="mainTitle">
                             <h3>Extensive Range of Assisted Care Products</h3>
                         </div>
                     </div>
-                    <div className="productsItembox">
-                            {productNames.map( prod => (
-                                <div className="productsItem" key={prod.id}>
-                                    <div className="productsItemimage">
-                                        <figure>
-                                            <Image src={prod.image} width={prod.wd} height={prod.ht} alt ="" />
-                                        </figure>
-                                    </div>
-                                    <div className="productsItemtitle">
-                                        <div className="title">
-                                            <span>{ prod.title }</span>
+                    <div className="productsItembox" id="productsItembox">
+                        {productNames.map( prod => (
+                            <div className="productsItem" key={prod.id}>
+                                <Link href="#">
+                                    <a title="Item Title" className="links">
+                                        <div className="productsItemimg">
+                                            <figure>
+                                                <Image src={prod.image} width={prod.wd} height={prod.ht} alt ="product" />
+                                            </figure>
                                         </div>
-                                    </div>
-                                    
-                                </div>
-                            ))}
+                                        <div className="productsItemtitle">
+                                            <div className="title">{ prod.title }</div>
+                                        </div>
+                                    </a>
+                                </Link>                                
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

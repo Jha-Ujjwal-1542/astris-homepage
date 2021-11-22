@@ -1,13 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import SayingPerson1 from '../../public/images/testimonialPerson1.png'
-import SayingPerson2 from '../../public/images/testimonialPerson2.png'
+import TestimonialBG from '../../public/images/testimonial/testimonialBg.png'
 import PlayIcon from '../../public/images/iconPlay.svg'
 import sayings from '../../src/datas/sayings.json'
 import React from "react"
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from 'react-slick'
+
 
 export const getStaticProps = async () => {
    const res = "../src/datas/sayings.json"
@@ -29,47 +26,49 @@ const Testimonials = () => {
     }; 
     
     return(
-      <>
-         <section className = "testimonialSection">
-            <div className = "container">
-               <div className = "sectionBox">
-                     <div className = "sectionTitle">
-                        <div className = "mainTitle">
-                           <h3>What Our Valued Clients Have To Say</h3>
-                        </div>
-                     </div>
-                     <div className = "testimonialSliderbox">
-                        <div className = "testimonialSlider" id="testimonialSlider">
-                        <Slider {...settings}>
-                           {sayings.map( saying => (
-                              <div key={saying.id}>
+      <section className = "testimonialSection">
+         <div className="testimonialBgoverlay">
+            <Image src={TestimonialBG} alt="" />
+         </div>
+         <div className = "container">
+            <div className = "sectionBox">
+               <div className = "sectionTitle center">
+                  <div className = "mainTitle">
+                     <h3 className="colWhite">What Our Valued Clients Have To Say</h3>
+                  </div>
+               </div>
+               <div className = "testimonialSliderbox">
+                  <div className = "testimonialSlider" id="testimonialSlider">
+                     {sayings.map( saying => (
+                        <div className="testimonialItem" key={saying.id}>
+                           <div className="testimonialImagebox">
                                  <div className="testimonialImage">
-                                    <div className="testimonialImage figure">
-                                       <Image className="testimonialImage image" src={saying.image} width="530px" height="240px" alt="" />   
-                                    </div>
+                                    <figure>
+                                       <Image src={saying.image} width="530px" height="250px" alt="Testimonials" />
+                                    </figure>
                                  </div>
-                                 {/*<div>
-                                    
-                                    <div className="testimonialVideo}>
-                                        <button>
-                                          <Image src={PlayIcon} />
-                                       </button> 
-                                    </div>
-                                 </div>*/}
-                                 <div className="details"> 
+                                 <div className="testimonialVideoPopup">
+                                    <button>
+                                       <Image src={PlayIcon} alt="Play Icon" />
+                                    </button>
+                                 </div>
+                              </div>
+                              <div className="testimonialTextbox">
+                                 <div className="text">
+                                    <p>PME are fantastic – the best we’ve ever dealt with. We had to get through a few issues with NDIS to get my daughters new wheelchair, but once that was sorted the process was made easy by PME. They couldn’t do enough for us.</p>
+                                 </div>
+                                 <div className="details">
                                     <div className="name">{saying.name}</div>
                                     <span>{ saying.desc }</span>
                                  </div>
                               </div>
-                           ))}
-                           
-                        </Slider>
-                        </div>
-                     </div>
+                           </div>
+                     ))}
+                  </div>
                </div>
             </div>
-         </section>
-      </>
+         </div>
+      </section>
    )
 }
 

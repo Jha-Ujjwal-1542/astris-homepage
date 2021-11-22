@@ -2,14 +2,14 @@
    {
       "id":1,
       "name":"Marie Blogg",
-      "image":"/images/testimonialPerson1.png",
+      "image":"/images/testimonial/testimonialPerson1.png",
       "desc":"Product Manager at ACME",
       "text":"PME are fantastic – the best we’ve ever dealt with. We had to get through a few issues with NDIS to get my daughters new wheelchair, but once that was sorted the process was made easy by PME. They couldn’t do enough for us."
    },
    {
       "id":2,
       "name":"David Morren",
-      "image":"/images/testimonialPerson2.png",
+      "image":"/images/testimonial/testimonialPerson2.png",
       "desc":"Financial Analyist at JCI Industries",
       "text":"PME are fantastic – the best we’ve ever dealt with. We had to get through a few issues with NDIS to get my daughters new wheelchair, but once that was sorted the process was made easy by PME. They couldn’t do enough for us."
    }

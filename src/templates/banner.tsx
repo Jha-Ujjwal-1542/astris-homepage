@@ -10,13 +10,15 @@ export const handleClick = () => {
 const banner = () => {
    return(
       <section className="bannerSection">
-         <Image 
-               src={bannerimage} 
-               className="banner" 
-               width="1800px" 
-               height="516px" 
-               alt=""
-         />
+         <div className="bannerSectionImageBG">
+            <Image 
+                  src={bannerimage} 
+                  width="1366px" 
+                  height="520px" 
+                  alt=""
+            />
+         </div>
+         <div className="container">
          <div className="bannerBox">
             <div className="bannerTextbox">
                <div className="title">
@@ -25,7 +27,7 @@ const banner = () => {
                      <span className="colYellow">Improving lives</span>
                   </h1>
                </div>
-               <div className="buttonHolder">
+               <div className="buttonHolder center">
                   <button className="button" onClick={handleClick} title="REQUEST PRODUCT TRIAL">
                      REQUEST PRODUCT TRIAL
                   </button>
@@ -37,7 +39,9 @@ const banner = () => {
                   </Link>
                </div>
             </div>
-         </div>   
+         </div> 
+         </div>
+           
       </section>
    )
 }

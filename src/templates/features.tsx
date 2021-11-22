@@ -13,35 +13,27 @@ const features = () => {
                <div className="heroItembox">
                   <div className="heroItem">
                      <div className="heroItemicon">
-                        <GrDiamond />
+                        <GrDiamond width={15} height={15} />
                      </div>
-                     <div className="heroItemText">
-                        <span>Equipment Trials</span>
-                     </div>   
+                     <div className="heroItemText">Equipment Trials</div>   
                   </div>
                   <div className="heroItem">
                      <div className="heroItemicon">
                         <RiTeamLine />
                      </div>
-                     <div className="heroItemText">
-                        <span>Experienced Team</span>
-                     </div>   
+                     <div className="heroItemText">Experienced Team</div>   
                   </div>
                   <div className="heroItem">
                      <div className="heroItemicon">
                         <GiStrong />
                      </div>
-                     <div className="heroItemText">
-                        <span>Strong Relationships</span>
-                     </div>   
+                     <div className="heroItemText">Strong Relationships</div>   
                   </div>
                   <div className="heroItem">
                      <div className="heroItemicon">
                         <TiSupport />
                      </div>
-                     <div className="heroItemText">
-                        <span>Configured Care</span>
-                     </div>   
+                     <div className="heroItemText">Configured Care</div>   
                   </div>
                </div>
             </div>
