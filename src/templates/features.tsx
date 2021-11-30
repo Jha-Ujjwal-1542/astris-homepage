@@ -5,7 +5,7 @@ import { RiTeamLine } from "react-icons/ri";
 import { GiStrong } from "react-icons/gi";
 import { TiSupport } from "react-icons/ti";
 
-const features = () => {
+const Features = () => {
    return(
       <section className="heroSection">
          <div className="container">
@@ -42,4 +42,4 @@ const features = () => {
    )
 }
 
-export default features
+export default Features

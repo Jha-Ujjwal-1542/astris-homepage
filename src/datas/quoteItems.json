@@ -1,0 +1,42 @@
+[
+   {
+      "id": 1,
+      "title": "Mike's Equipment Hire",
+      "items": 1,
+      "date": "14th October 2021",
+      "time": "2:05 EST",
+      "status": "Expires in 38 days",
+      "expiryDate": "10th November 2021",
+      "type": "Equipment Hire"
+   },
+   {
+      "id": 2,
+      "title": "Mike's Equipment Hire",
+      "items": 2,
+      "date": "14th October 2021",
+      "time": "2:05 EST",
+      "status": "Expires in 38 days",
+      "expiryDate": "10th November 2021",
+      "type": "Price Quote"
+   },
+   {
+      "id": 3,
+      "title": "John's Essentials",
+      "items": 4,
+      "date": "14th October 2021",
+      "time": "2:05 EST",
+      "status": "Expires in 38 days",
+      "expiryDate": "10th November 2021",
+      "type": "Price Quote"
+   },
+   {
+      "id": 4,
+      "title": "Un-named Quote #1",
+      "items": 1,
+      "date": "14th October 2021",
+      "time": "2:05 EST",
+      "status": "Pending",
+      "expiryDate": "N/A",
+      "type": "Price Quote"
+   }
+]

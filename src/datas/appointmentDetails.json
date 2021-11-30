@@ -1,0 +1,34 @@
+[
+   {
+      "id":1,
+      "image":"/public/images/products/indoorSeat.png",
+      "model": "Swifty Rehab Push Chair",
+      "brand": "Thomashilfen",
+      "serialNumber": 1617264,
+      "supplier": "APEX Mobility"
+   },
+   {
+      "id":2,
+      "image":"/public/images/products/indoorSeat.png",
+      "model": "Swifty Rehab Push Chair",
+      "brand": "Thomashilfen",
+      "serialNumber": 1617264,
+      "supplier": "APEX Mobility"
+   },
+   {
+      "id":3,
+      "image":"/public/images/products/indoorSeat.png",
+      "model": "Swifty Rehab Push Chair",
+      "brand": "Thomashilfen",
+      "serialNumber": 1617264,
+      "supplier": "APEX Mobility"
+   },
+   {
+      "id":4,
+      "image":"/public/images/products/indoorSeat.png",
+      "model": "Swifty Rehab Push Chair",
+      "brand": "Thomashilfen",
+      "serialNumber": 1617264,
+      "supplier": "APEX Mobility"
+   }
+]

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import aboutUs from '../../public/images/aboutUsImage.png'
 
-const story = () => {
+const Story = () => {
    return(
       <section className="aboutusSection">
          <div className="container">
@@ -37,4 +37,4 @@ const story = () => {
    )
 }
 
-export default story;
+export default Story;

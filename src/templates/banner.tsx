@@ -7,7 +7,7 @@ export const handleClick = () => {
    console.log("hello")
 }
 
-const banner = () => {
+const Banner = () => {
    return(
       <section className="bannerSection">
          <div className="bannerSectionImageBG">
@@ -46,4 +46,4 @@ const banner = () => {
    )
 }
 
-export default banner
+export default Banner

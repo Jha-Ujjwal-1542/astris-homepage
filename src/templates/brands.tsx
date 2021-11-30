@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaSearch } from 'react-icons/fa';
 
-const brands = () => {
+const Brands = () => {
 
    return (
       <section className="brandsSection">
@@ -52,4 +52,4 @@ const brands = () => {
       
 }
 
-export default brands
+export default Brands

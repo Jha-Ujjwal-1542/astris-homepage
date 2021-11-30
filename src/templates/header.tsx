@@ -17,7 +17,7 @@ export const handleHireRequestPopup=()=>{
    //Hire Req portal login form
 }
 
-const headerSection =() => {
+const Header =() => {
    return( 
    <header className="headerSticky">
       <section className="headerSection">
@@ -178,4 +178,4 @@ const headerSection =() => {
    )
 }
 
-export default headerSection
+export default Header

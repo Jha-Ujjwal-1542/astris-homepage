@@ -12,7 +12,7 @@ export const getStaticProps = async () => {
    }
 }
 
-const research = () => {
+const Research = () => {
    return (
       <section className="blogSection">
          <div className="testimonialBgoverlay">
@@ -65,4 +65,4 @@ const research = () => {
    )
 }
 
-export default research
+export default Research

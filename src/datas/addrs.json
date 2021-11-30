@@ -1,0 +1,38 @@
+[
+   {
+      "id":1,
+      "street":"123 Streety Street",
+      "town": "Perth",
+      "state": "Western Australia",
+      "postcode": "431670",
+      "type": "Home",
+      "showroom": "APEX Mobility"
+   },
+   {
+      "id":2,
+      "street":"123 Streety Street",
+      "town": "Perth",
+      "state": "Western Australia",
+      "postcode": "431670",
+      "type": "Home",
+      "showroom": "APEX Mobility"
+   },
+   {
+      "id":3,
+      "street":"123 Streety Street",
+      "town": "Perth",
+      "state": "Western Australia",
+      "postcode": "431670",
+      "type": "Home",
+      "showroom": "APEX Mobility"
+   },
+   {
+      "id":4,
+      "street":"123 Streety Street",
+      "town": "Perth",
+      "state": "Western Australia",
+      "postcode": "431670",
+      "type": "Home",
+      "showroom": "APEX Mobility"
+   }
+]

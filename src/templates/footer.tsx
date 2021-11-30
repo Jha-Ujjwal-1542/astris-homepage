@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaFacebookSquare, FaLinkedin, FaYoutube, FaPhoneAlt } f
 import { SiGmail } from 'react-icons/si'
 import astrispmeLogo from "../../public/images/logos/astrisPMELogowhaite.png"
 
-const footer = () => {
+const Footer = () => {
    return(
       <section>
          
@@ -174,4 +174,4 @@ const footer = () => {
    )
 }
 
-export default footer
+export default Footer
