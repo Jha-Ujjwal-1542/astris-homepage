@@ -157,16 +157,20 @@ const Header =() => {
                <div className="navItem">
                   <ul>
                      <li>
-                        <a className="links"  href="" title="">
-                           <span className="dataIcon"><FaClipboardList className="iconHead" /></span>
-                           <span className="dataText">2 Items</span>
-                        </a>
+                        <Link href="/myQuotes" passHref scroll>
+                           <a className="links"  title="">
+                              <span className="dataIcon"><FaClipboardList className="iconHead" /></span>
+                              <span className="dataText">2 Items</span>
+                           </a>
+                        </Link>
                      </li>
                      <li>
-                        <a  className="links"   href="/myDetails" title="User Portal">
-                        <span className="dataIcon"><FaUserAlt className="iconHead" /></span>
-                           <span className="dataText">User Portal</span>
-                        </a>
+                        <Link href="/myDetails" passHref>
+                           <a  className="links" title="User Portal">
+                              <span className="dataIcon"><FaUserAlt className="iconHead" /></span>
+                              <span className="dataText">User Portal</span>
+                           </a>
+                        </Link>
                      </li>
                   </ul>
                </div>

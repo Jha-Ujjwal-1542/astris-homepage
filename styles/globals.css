@@ -962,6 +962,55 @@ table tbody td .-productDetail span {
   width: 7px;
   height: 5px;
 }
+.serviceRequestSection {
+  margin: 30px 0 65px;
+}
+.serviceRequestBox {
+  margin: 35px 0 0 0;
+}
+form {
+  display: block;
+}
+.serviceRequestForm {
+  padding: 35px 40px;
+  border: 1px solid #d6d6d6;
+  border-radius: 20px;
+}
+.serviceRequestForm .formHolder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.serviceRequestForm > div {
+  margin: 0 0 30px 0;
+}
+.serviceRequestForm .formHolder > label {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.serviceRequestForm .formHolder > label * {
+  font-size: 14px;
+  line-height: 22px;
+  color: #343741;
+}
+.serviceRequestForm .formHolder > *:not(label) {
+  min-width: 530px;
+  width: 100%;
+  max-width: 50%;
+  margin-left: 40px;
+}
+label {
+  cursor: default;
+}
+.serviceRequestForm > div.submitHolder {
+  margin: 40px 0 0 0;
+}
+.serviceRequestForm > div:last-child {
+  margin: 0;
+}
+
 .customGroup {
   margin: 0 0 10px 0;
 }
