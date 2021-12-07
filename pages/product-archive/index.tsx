@@ -18,7 +18,7 @@ const SingleProduct = () => {
             <div className="container">
                <div className="breadcrumbBox">
                      <Link href="/">
-                        <a href="/" className="breadcrumbHome"><FaHome /></a>
+                        <a className="breadcrumbHome"><FaHome /></a>
                      </Link>
                      <span className="breadcrumbIcon"><FaCaretRight /></span>
                      <Link href="/browse-by-category">

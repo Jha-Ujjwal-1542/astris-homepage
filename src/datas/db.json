@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "My First Blog",
+      "body": "The wheelchair can be viewed as an extension of the user, particularly where the user is reliant on the chair for everyday use. It is therefore an...",
+      "author": "James"
+    },
+    {
+      "id": 2,
+      "title": "My Second Blog",
+      "body": "The wheelchair can be viewed as an extension of the user, particularly where the user is reliant on the chair for everyday use. It is therefore an...",
+      "author": "Harry"
+    }
+  ]
+}
