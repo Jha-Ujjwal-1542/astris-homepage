@@ -1,9 +1,8 @@
 import Header from './../../src/includes/portals/header';
 import Sidebar from './../../src/includes/portals/sidebar';
-import indoorSeat from '../../public/images/products/indoorSeat.png'
 import Link from 'next/link'
 import Image from 'next/image'
-import { FaCaretLeft, FaCaretRight, FaRegEye } from 'react-icons/fa';
+import { FaCaretLeft, FaCaretRight, FaRegEye, FaTh, FaThList, FaSearch } from 'react-icons/fa';
 import gridItems from '../../src/datas/equipGriditem.json'
 
 export const getStaticProps = async () => {
@@ -39,14 +38,14 @@ const Equipments = () => {
                                           <li>
                                              <button className="vsTablinks" title="">
                                                 <span className="icon">
-                                                   <Image src="img/icon--grid--view.svg" alt="" />
+                                                   <FaTh />
                                                 </span>
                                              </button>
                                           </li>
                                           <li>
                                              <button className="vsTablinks active" title="">
                                                 <span className="icon">
-                                                   <Image src="img/iconList--view.svg" alt="" />
+                                                   <FaThList />
                                                 </span>
                                              </button>
                                           </li>
@@ -59,7 +58,7 @@ const Equipments = () => {
                                  <div className="tableFilters">
                                     <div className="sectionSearch">
                                        <div className="sectionSearchbox">
-                                          <Image src="img/iconSearch.svg" alt="" />
+                                          <FaSearch />
                                           <input type="text" placeholder="Enter Keyword (Equipment Name, Key, Company, etc.)" />
                                        </div>
                                     </div>
@@ -90,10 +89,10 @@ const Equipments = () => {
                                                    <a title="">
                                                       <div className="myEquipmentsGridimg">
                                                          <div className="brandLogo">
-                                                            <Image src={gridItem.logo} alt="" />
+                                                            <Image src={gridItem.logo} width={83} height={28}  alt="" />
                                                          </div>
                                                          <figure>
-                                                            <Image src={gridItem.product} alt="" />
+                                                            <Image src={gridItem.product} width={291} height={305} alt="" />
                                                          </figure>
                                                       </div>
                                                       <div className="myEquipmentsGridtext">
@@ -154,7 +153,7 @@ const Equipments = () => {
                                                                 <td><span className="colGreen fontBold">{gridItem.status}</span><br /><span>{gridItem.date}</span></td>
                                                                 <td className="tdAction">
                                                                     <div className="tdActionbox">
-                                                                        <Link href="/myEqpSummary" passHref>
+                                                                        <Link href="/my-eqp/my-eqp-summary" passHref>
                                                                            <a className="tableAction">
                                                                               <FaRegEye />
                                                                            </a>

@@ -1,7 +1,7 @@
 import styles from '../../styles/contactUs.module.css'
 import Link from 'next/link'
 import { FaHome, FaCaretRight } from 'react-icons/fa'
-import ContactForm from "../"
+import ContactForm from "../../src/templates/sharedModule/contact/contactForm"
 
 
 const contactUs = () => {
@@ -18,22 +18,22 @@ const contactUs = () => {
                </div>
             </div>
          </section>
-         <section>
-            <div className="mainTitle">
-               Message Center
-               <div className="subTitle">
-                  Please complete the following form and we will reach out to you soon.
-               </div>
-            </div>
-            <section className="contactUsSection">
-               <div className="container">
-                  <div className="sectionBox">
-                     <div className="contactusBox">
-                        <ContactForm />
+         <section className="contactUsSection">
+            <div className="container">
+               <div className="sectionBox">
+                  <div className="sectionTitle">
+                     <div className="mainTitle">
+                        <h3>Message Center</h3>
+                     </div>
+                     <div className="text">
+                        <p>Please complete the following form and we will reach out to you soon.</p>
                      </div>
                   </div>
+                  <div className="contactusBox">
+                        <ContactForm />
+                  </div>
                </div>
-            </section>
+            </div>
          </section>
       </section>
    )

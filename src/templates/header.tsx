@@ -68,7 +68,7 @@ const Header =() => {
                         </ul>
                      </div>
                      <div className="headerButton">
-                        <Link href="/equipments" passHref>
+                        <Link href="/browse-by-category" passHref>
                            <a  className="links"  >
                               <button className="button caps buttonIcon buttonYellow" title="Shop Now">
                                  <span className="dataIcon"><IoBagHandleSharp className="iconHead"  /></span>
@@ -125,7 +125,7 @@ const Header =() => {
                      </ul>
                   </li>
                   <li>
-                     <Link href="/contactUs">
+                     <Link href="/contact-us">
                         <a className="links"  title="Contact Us">Contact Us</a>
                      </Link>
                   </li>

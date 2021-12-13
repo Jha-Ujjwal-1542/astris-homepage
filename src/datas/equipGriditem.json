@@ -1,44 +1,44 @@
 [
-   {
-      "id": 1,
-      "logo": "/images/brands/brand1.png",
-      "product": "/public/images/products/pushwheelchair.png",
-      "title": "Swifty Rehab Pushchair",
-      "subtitle": "Thomashilfen",
-      "status": "Less than 6 months",
-      "listImage": "/images/products/indoorSeat.png",
-      "locationA":"123 Streety Street",
-      "locationB":"WA 4567, Australia",
-      "supplierA": "APEX Mobility",
-      "supplierB": "Ingleburn, Australia",
-      "date": "14/02/2020"
-   },
-   {
-      "id": 2,
-      "logo": "/images/brands/brand1.png",
-      "product": "/public/images/products/pushwheelchair.png",
-      "title": "Swifty Rehab Pushchair",
-      "subtitle": "Thomashilfen",
-      "months": "6-7 months",
-      "listImage": "/images/products/indoorSeat.png",
-      "locationA":"123 Streety Street",
-      "locationB":"WA 4567, Australia",
-      "supplierA": "APEX Mobility",
-      "supplierB": "Ingleburn, Australia",
-      "date": "14/02/2020"
-   },
-   {
-      "id": 3,
-      "logo": "/images/brands/brand1.png",
-      "product": "/public/images/products/pushwheelchair.png",
-      "title": "Swifty Rehab Pushchair",
-      "subtitle": "Thomashilfen",
-      "months": "MOre than 8 months",
-      "listImage": "/images/products/indoorSeat.png",
-      "locationA":"123 Streety Street",
-      "locationB":"WA 4567, Australia",
-      "supplierA": "APEX Mobility",
-      "supplierB": "Ingleburn, Australia",
-      "date": "14/02/2020"
-   }
+  {
+    "id": 1,
+    "logo": "/images/brands/brand1.png",
+    "product": "/images/products/pushwheelchair.png",
+    "title": "Swifty Rehab Pushchair",
+    "subtitle": "Thomashilfen",
+    "status": "Less than 6 months",
+    "listImage": "/images/products/indoorSeat.png",
+    "locationA": "123 Streety Street",
+    "locationB": "WA 4567, Australia",
+    "supplierA": "APEX Mobility",
+    "supplierB": "Ingleburn, Australia",
+    "date": "14/02/2020"
+  },
+  {
+    "id": 2,
+    "logo": "/images/brands/brand1.png",
+    "product": "/images/products/pushwheelchair.png",
+    "title": "Swifty Rehab Pushchair",
+    "subtitle": "Thomashilfen",
+    "months": "6-7 months",
+    "listImage": "/images/products/indoorSeat.png",
+    "locationA": "123 Streety Street",
+    "locationB": "WA 4567, Australia",
+    "supplierA": "APEX Mobility",
+    "supplierB": "Ingleburn, Australia",
+    "date": "14/02/2020"
+  },
+  {
+    "id": 3,
+    "logo": "/images/brands/brand1.png",
+    "product": "/images/products/pushwheelchair.png",
+    "title": "Swifty Rehab Pushchair",
+    "subtitle": "Thomashilfen",
+    "months": "MOre than 8 months",
+    "listImage": "/images/products/indoorSeat.png",
+    "locationA": "123 Streety Street",
+    "locationB": "WA 4567, Australia",
+    "supplierA": "APEX Mobility",
+    "supplierB": "Ingleburn, Australia",
+    "date": "14/02/2020"
+  }
 ]

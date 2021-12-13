@@ -20,21 +20,23 @@ const MyQuotes = () => {
             <div className="portalContainer">
                <div className="portalMainbox">
                      <Sidebar />
-                     <main className="portal--main">
-                        <div className="my-accountsBox">
-                           <div className="my-accountsList">
+                     <main className="portalMain">
+                        <div className="myAccountsBox">
+                           <div className="myAccountsList">
                               <div className="breadcrumbBox">
                                  <span className="breadcrumbText">My Quotes</span>
                               </div>
                            </div>
                            <div className="portalScroller">
-                              <div className="my-accountsDetail">
+                              <div className="myAccountsDetail">
                                  <div className="sectionTitle spaceBetween">
                                     <div className="mainTitle">
                                        <h3>My Quotes</h3>
                                     </div>
-                                    <div className="btnHolder">
-                                       <a href="browse-by-category" className="btn btnYellow" title="Add More Quotes">Add More Quotes</a>
+                                    <div className="buttonHolder">
+                                       <Link href="/browse-by-category">
+                                          <a className="button buttonYellow" title="Add More Quotes">Add More Quotes</a>
+                                       </Link>
                                     </div>
                                  </div>
                                  <div className="portalTablebox">

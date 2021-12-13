@@ -1,4 +1,4 @@
-import BannerBG from '../../../public/images/bannerBG.png'
+import BannerBG from '../../public/images/bannerBG.png'
 import Image from 'next/image'
 
 const Innerbanner = () => {

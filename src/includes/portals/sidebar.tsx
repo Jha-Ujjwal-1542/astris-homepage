@@ -6,21 +6,21 @@ const Sidebar = () => {
             <ul>
                   <li>
                      <Link href="/myDetails" passHref>
-                        <a className="myAccounts" title="My Accounts">My Accounts</a>
+                        <a className="myAccounts links" title="My Accounts">My Accounts</a>
                      </Link>
                   </li>
                   <li>
                      <Link href="/myEquipments" passHref>
-                        <a className="myEquipments" title="My Equipments">My Equipments</a>
+                        <a className="myEquipments links" title="My Equipments">My Equipments</a>
                      </Link></li>
                   <li>
                      <Link href="/myAppointments" passHref>
-                        <a className="myAppointments" title="My Appointments">My Appointments</a>
+                        <a className="myAppointments links" title="My Appointments">My Appointments</a>
                      </Link>
                   </li>
                   <li>
                      <Link href="/myQuotes" passHref>
-                        <a className="myQuotes" title="My Quotes">My Quotes</a>
+                        <a className="myQuotes links" title="My Quotes">My Quotes</a>
                      </Link>
                   </li>
                   <li>
